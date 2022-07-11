@@ -110,7 +110,7 @@ const initials = `${dogNames[0][0]}${dogNames[1][0]}${dogNames[2][0]}${dogNames[
 - Exiba a "initials" no console, mas com todas as letras minúsculas;
 - Utilize o método adequado para isso.
 */
-// console.log("🚀", initials.toLocaleLowerCase());
+// console.log("🚀", initials.toLowerCase());
 
 /*
 11 - Comente o console.log acima e:
@@ -132,7 +132,7 @@ const dessert = `${dogNames[0].slice(3)}${dogNames[1].slice(
 )}${dogNames[3].slice(2)}`.replace("n", "d");
 
 console.log(
-  `🚀 A ${dessert} é um doce à base de coco, tradicional na América Latina e em Angola.`
+  // `🚀 A ${dessert} é um doce à base de coco, tradicional na América Latina e em Angola.`
 );
 
 /*
