@@ -84,7 +84,7 @@ let randomWord = "Araponga";
 */
 
 const summerMessage = "O VERÃO CHEGA NESTE FIM DE SEMANA";
-// console.log("🚀", summerMessage.toLocaleLowerCase());
+// console.log("🚀", summerMessage.toLowerCase());
 
 /*
 10 - Comente o console.log acima, e,
@@ -95,7 +95,7 @@ const summerMessage = "O VERÃO CHEGA NESTE FIM DE SEMANA";
 */
 
 const winterMessage = "o inverno está chegando";
-// console.log("🚀", winterMessage.toLocaleUpperCase());
+// console.log("🚀", winterMessage.toUpperCase());
 
 /*
 11 - Comente o console.log acima, e,
@@ -189,7 +189,7 @@ const allEpisodes = `O nº de episódios é: ${episodes} `;
 - Não use template strings.
 */
 
-const bookMessage = "'O Conto da Aia' é um dos livros mais vendidos da década.";
+const bookMessage = '\'O Conto da Aia\' é um dos livros mais vendidos da década.';
 // console.log(bookMessage)
 
 /*
@@ -204,7 +204,7 @@ const bookMessage = "'O Conto da Aia' é um dos livros mais vendidos da década.
 */
 
 const name = "walter white";
-let newName =
+let newName = 
   name[0].toUpperCase() +
   name.slice(1, 6) +
   " " +
