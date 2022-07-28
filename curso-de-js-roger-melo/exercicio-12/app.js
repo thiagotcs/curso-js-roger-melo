@@ -34,8 +34,6 @@ const gererateMovieMessage = (movie) => {
 
 best2019Movies.forEach(gererateMovieMessage)
 console.log(message)
-
-
 /*
   02
 
@@ -49,7 +47,6 @@ console.log(message)
   
   - As 4 linhas da mensagem, podem ser exibidas separadamente.
 */
-
 const youtubeUser = {
   name: 'Roger Melo',
   chanelUrl: 'https://www.youtube.com/channel/UCmjDevp9Y8r-qi-xueD3Izg',
@@ -80,13 +77,9 @@ const youtubeUser = {
 youtubeUser.getRecentVideos()
 /*
   03
-
   - Exiba o valor do PI no console.
 */
-
 console.log(Math.PI)
-
-
 /*
   04
 
@@ -105,17 +98,14 @@ console.log(Math.ceil(firstNumber))
 
 const secondNumber = 3.5
 console.log(Math.round(secondNumber))
-
 /*
   06
 
   - Arredonde o número que a constante abaixo armazena para 8 e exiba-o no  
     console.
 */
-
 const thirdNumber = 8.9
 console.log(Math.floor(thirdNumber))
-
 
 /*
   07
