@@ -4,7 +4,10 @@ let user = {
   age: 4,
   email: 'miguel@gmail.com',
   city: 'Maringa',
-  blogPosts: ['Empadão de frango', '4 receitas de purê de batata'],
+  blogPosts: [
+    {title: 'Empadão de frango', likes: 30},
+    {title: '4 receitas de purê de batata', likes: 50}
+  ],
   login() {
     console.log('Usuário logado')
   },
@@ -15,7 +18,7 @@ let user = {
     console.log(`${user.name} escreveu os seguintes posts:`)
     
     this.blogPosts.forEach(post => {
-      console.log(post)
+      console.log(post.title, post.likes)
     })
   }
 }
