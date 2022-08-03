@@ -10,7 +10,7 @@
   border: 1px dotted green;
 } */
 
-ul {
+/* ul {
   padding: 0;
 }
 
@@ -21,4 +21,13 @@ li {
   margin: 8px 0;
   background: #eee;
   border: 1px dotted #ddd;
+} */
+
+.box {
+  width: 200px;
+  height: 200px;
+  margin: 10px 0;
+  background: #eee;
+  text-align: center;
+  padding: 20px;
 }
