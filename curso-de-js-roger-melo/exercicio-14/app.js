@@ -8,8 +8,6 @@ const title = document.querySelector('h1');
 
 title.textContent = title.textContent.toUpperCase();
 
-
-
 /*
   02
 
@@ -17,15 +15,15 @@ title.textContent = title.textContent.toUpperCase();
   - Cada número deve estar dentro de uma <li> com a classe "number".
 */
 
-const numbers = [ 53, 24, 3, 8, 1, 6, 57, 80, 77, 98, 55 ]
+const numbers = [53, 24, 3, 8, 1, 6, 57, 80, 77, 98, 55];
 
 const ul = document.querySelector('.numbers');
 
 const insertNumberIntoUl = number => {
   ul.innerHTML += `<li class="number">${number}</li>`;
-}
+};
 
-numbers.forEach(insertNumberIntoUl)
+numbers.forEach(insertNumberIntoUl);
 
 /*
   03
@@ -39,18 +37,14 @@ const lis = document.querySelectorAll('.number');
 const changeLiColor = li => {
   const isEven = Number(li.textContent) % 2 === 0;
 
-  if(isEven) {
-    li.style.color = 'lightblue'
-    return
+  if (isEven) {
+    li.style.color = 'lightblue';
+    return;
   }
-  li.style.color = 'pink'
-}
+  li.style.color = 'pink';
+};
 
-lis.forEach(changeLiColor)
-
-
-
-
+lis.forEach(changeLiColor);
 
 /*
   04
@@ -65,7 +59,6 @@ const body = document.body;
 
 body.classList.add('body-background');
 
-
 /*
   05
 
@@ -76,8 +69,10 @@ body.classList.add('body-background');
 
 const repoLink = document.querySelector('a');
 
-repoLink.setAttribute('href', 'https://github.com/roger-melo-treinamentos/curso-de-js-roger-melo');
-
+repoLink.setAttribute(
+  'href',
+  'https://github.com/roger-melo-treinamentos/curso-de-js-roger-melo',
+);
 
 /*
   06
@@ -87,7 +82,6 @@ repoLink.setAttribute('href', 'https://github.com/roger-melo-treinamentos/curso-
 
 console.log(repoLink.getAttribute('href'));
 
-
 /*
   07
 
@@ -96,15 +90,12 @@ console.log(repoLink.getAttribute('href'));
 */
 console.log(title.style);
 
-
 /*
   08
 
   - Remova a classe "body-background", do elemento body.
 */
 body.classList.remove('body-background');
-
-
 
 /*
   09
