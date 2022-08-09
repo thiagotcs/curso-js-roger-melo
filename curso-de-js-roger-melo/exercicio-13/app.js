@@ -9,14 +9,14 @@
 */
 
 const getCatInfo = () => {
-  const name = 'Marcos'
-  let age = 3
-  const color = 'Cinza'
-  return {name, age, color}
-}
+  const name = 'Marcos';
+  let age = 3;
+  const color = 'Cinza';
+  return { name, age, color };
+};
 
-const { name, age, color } = getCatInfo()
-console.log(`${name} é um gato ${color} de ${age} anos.`)
+const { name, age, color } = getCatInfo();
+console.log(`${name} é um gato ${color} de ${age} anos.`);
 
 /*
   02
@@ -27,18 +27,18 @@ console.log(`${name} é um gato ${color} de ${age} anos.`)
 */
 
 const external = () => {
-  const movie = 'Parasite'
+  const movie = 'Parasite';
 
   const internal = () => {
     const extraInternal = () => {
-      console.log(movie.toUpperCase())
-    }
-    extraInternal()
-  }
-  internal()
-}
+      console.log(movie.toUpperCase());
+    };
+    extraInternal();
+  };
+  internal();
+};
 
-external()
+external();
 
 /*
   03
@@ -49,9 +49,9 @@ external()
   Dica: procure pelo método reverse, no MDN.
 */
 
-let randomNumbers = [3, 2, 1]
-randomNumbers.reverse()
-console.log(randomNumbers)
+let randomNumbers = [3, 2, 1];
+randomNumbers.reverse();
+console.log(randomNumbers);
 
 /*
   04
@@ -63,11 +63,13 @@ console.log(randomNumbers)
 
 let crazyArray = [
   { prop1: '1', prop2: '2' },
-  function getMessage () { return 'hi' },
-  [ 5, 96, 53  ]
-]
-crazyArray.shift()
-console.log(crazyArray)
+  function getMessage() {
+    return 'hi';
+  },
+  [5, 96, 53],
+];
+crazyArray.shift();
+console.log(crazyArray);
 
 /*
   05
@@ -83,12 +85,12 @@ const dogs = [
   { name: 'Zé', age: 2, gender: 'Male', breed: 'Pug' },
   { name: 'Jade', age: 4, gender: 'Female', breed: 'Shiba inu' },
   { name: 'Zequinha', age: 7, gender: 'Male', breed: 'Poodle' },
-  { name: 'Xica', age: 6, gender: 'Female', breed: 'Chihuahua' }
-]
+  { name: 'Xica', age: 6, gender: 'Female', breed: 'Chihuahua' },
+];
 
 const zequinha = dogs.find(dog => dog.name === 'Zequinha');
 
-console.log(zequinha)
+console.log(zequinha);
 
 /*
   06
@@ -134,6 +136,6 @@ console.log(h1);
   - Exiba esse NodeList no console.
 */
 
-const allH2 = document.querySelectorAll('.secondary-title')
+const allH2 = document.querySelectorAll('.secondary-title');
 
-console.log(allH2)
+console.log(allH2);
