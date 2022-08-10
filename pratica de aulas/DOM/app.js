@@ -1,18 +1,41 @@
-//? obtendo, adicionando, removendo e alterando classes CSS
-//? OBS: innerText, exibir o texto visivel que o elemento contem
-//? OBS: textContent, exibir todo o texto do elemento independente visivel ou não
+//? Event submit
 
-const title = document.querySelector('h1');
-const paragraphs = document.querySelectorAll('p');
+const form = document.querySelector('.signup-form');
+const feedback = document.querySelector('.feedback');
+// const usernameInput = document.querySelector('#username');
 
-title.classList.toggle('test');
-title.classList.toggle('test');
+const testUsername = username => /^[a-zA-Z]{6,11}$/.test(username);
 
-paragraphs.forEach(paragraph => {
-  if (paragraph.textContent.includes('error')) {
-    paragraph.classList.add('error');
+form.addEventListener('submit', event => {
+  event.preventDefault();
+  // console.log(usernameInput.value);
+  // console.log(form.username.value);
+  // console.log(event.target.username.value);
+  const isAvalidUsername = testUsername(event.target.username.value);
+
+  if (isAvalidUsername) {
+    feedback.textContent = 'username válido =)';
+    return;
   }
-  if (paragraph.textContent.includes('success')) {
-    paragraph.classList.add('success');
+  feedback.textContent =
+    'o username deve conter entre 6 a 12 caracteres e deve conter apenas letras';
+});
+
+//? Regular expression (regex) to match Name
+// const username = 'miguel';
+// const pattern = /^[a-zA-Z]{6,}$/;
+// const result = pattern.test(username);
+// console.log(result);
+
+form.username.addEventListener('keyup', event => {
+  const isAvalidUsername = testUsername(event.target.value);
+
+  console.log(event);
+  if (isAvalidUsername) {
+    form.username.setAttribute('class', 'success');
+    console.log('é válido!');
+    return;
   }
+  console.log('não é válido!');
+  form.username.setAttribute('class', 'error');
 });
