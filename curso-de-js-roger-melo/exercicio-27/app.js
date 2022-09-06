@@ -28,10 +28,9 @@ console.log('Linha 8');
 function logGreeting(name) {
   console.log(`olá, ${name}`);
 }
-
 const x = callback => {
   callback('Miguel');
-};
+}
 
 x(logGreeting);
 
@@ -56,6 +55,7 @@ console.log(lesserThanFive);
 const prices = [12, 19, 7, 209];
 const getTotalPrice = (acc, item) => acc + item;
 const totalPrice = prices.reduce(getTotalPrice, 0);
+
 console.log(`Preço total: ${totalPrice}`);
 
 /*
@@ -67,6 +67,7 @@ console.log(`Preço total: ${totalPrice}`);
 
 let car = { color: 'amarelo' };
 let secondcar = car;
+// car.color = 'Azul';
 secondcar.color = 'Azul';
 console.log(car.color, secondcar.color);
 
@@ -85,7 +86,8 @@ const myFunc = (param1, param2, param3) => {
     ? `A função deve ser invocada com 3 argumentos`
     : `A função foi invocada com 3 argumentos`;
 };
-console.log(myFunc());
+// console.log(myFunc());
+console.log(myFunc(() => {}, [], {}));
 /*
   07
 
@@ -153,7 +155,7 @@ booksBox.addBooks = booksQuantity => {
   return `Já há '${booksBox.booksIn}' ${bookPluralOrSingular} na caixa`;
 };
 
-console.log(booksBox.addBooks(3));
-console.log(booksBox.addBooks(2));
-console.log(booksBox.addBooks(3));
-console.log(booksBox);
+// console.log(booksBox.addBooks(3));
+// console.log(booksBox.addBooks(2));
+// console.log(booksBox.addBooks(3));
+// console.log(booksBox);
