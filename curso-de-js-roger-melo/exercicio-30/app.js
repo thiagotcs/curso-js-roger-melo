@@ -8,6 +8,29 @@
     dados dos usuários."
 */
 
+const getUsers = url => new Promise((resolve, reject) => {
+  const request = new XMLHttpRequest();
+
+  request.onreadystatechange = ('readystatechange', () => {
+    const isRequestOk = request.readyState === 4 && request.status === 200
+    const isRequestNotOk = request.readyState === 4
+
+    if (isRequestOk) {
+      const data = JSON.parse(request.responseText);
+      resolve(data)
+    }
+    if (isRequestNotOk) {
+      reject('Não foi possível obter os dados dos usuários.')
+    }
+  });
+
+  request.open('GET', url);
+  request.send();
+})
+getUsers('https://jsonplaceholder.typicode.com/users')
+  .then(console.log)
+  .catch(err => console.log(err));
+
 /*
   02
 
@@ -21,6 +44,31 @@
     mensagem: "Resultado da operação: NUMERO_1 OPERADOR NUMERO_2 = RESULTADO."
   - Se o operador não for válido, retorne a mensagem "Operação inválida."
 */
+const getOperationMessage = (num1, operator, num2, operation) => 
+  `Resultado da operação: ${num1} ${operator} ${num2}  = ${operation}.`
+
+  const calculator = operator => (num1, num2) => {
+  const operations = {
+    '+': getOperationMessage(num1, operator, num2, num1 + num2),
+    '-': getOperationMessage(num1, operator, num2, num1 - num2),
+    '*': getOperationMessage(num1, operator, num2, num1 * num2),
+    '/': getOperationMessage(num1, operator, num2, num1 / num2),
+    '%': getOperationMessage(num1, operator, num2, num1 % num2),
+  }
+  return operations[operator] || `Operação inválida.`
+}
+const sum = calculator('+')
+const subtraction = calculator('-')
+const Multiplication = calculator('*')
+const division = calculator('/')
+const test = calculator('y')
+const remainder = calculator('%')
+console.log(sum(1, 1))
+console.log(subtraction(1, 1))
+console.log(Multiplication(4, 6))
+console.log(division(6, 3))
+console.log(remainder(5, 2))
+console.log(test(6, 3))
 
 /*
   03
@@ -35,6 +83,22 @@
   - Crie um novo array chamado `newSul`, que recebe somente os estados do sul,
     pegando do array `brasil`. Não remova esses itens de `brasil`.
 */
+const sul = ['Santa Catarina', 'Paraná', 'Rio Grande do Sul']
+const sudeste = [
+  'Minas Gerais',
+  'Espírito Santo',
+  'Rio de Janeiro',
+  'São Paulo'
+]
+let brasil = sul.concat(sudeste)
+brasil.unshift('Amazonas', 'Acre', 'Rondônia')
+console.log(brasil.shift())
+console.log(brasil)
+
+const newSul = brasil.slice(2, 5)
+console.log(newSul)
+console.log(brasil)
+
 
 /*
   04
@@ -55,6 +119,25 @@
     every.
 */
 
+const nordeste = [
+  'Maranhão',
+  'Piauí',
+  'Rio Grande do Norte',
+  'Ceará',
+  'Paraíba',
+  'Bahia'
+]
+const newSudeste = brasil.splice(5, 4)
+brasil = brasil.concat(nordeste)
+const newBrasil = brasil.map((item, index) => ({ id: index, estado: item }))
+console.log(newBrasil)
+
+const hasMoreThan7Letters = brasil.every(item => item.length > 7);
+const message = hasMoreThan7Letters 
+  ? 'Sim, todos os estados tem mais de 7 letras.'
+  : 'Nem todos os estados tem mais de 7 letras.'
+
+console.log(message)
 /*
   05
 
@@ -68,3 +151,18 @@
   - Filtre o array criado acima, retornando somente os estados que tiverem ID 
     par. Atribua este novo array à uma constante.
 */
+
+const isCearaIncluded = brasil.includes('Ceará')
+const cearaMessage = isCearaIncluded
+  ? 'Ceará está incluído.'
+  : 'Ceará não foi incluído =/'
+  console.log(cearaMessage)
+
+const newNewBrasil = newBrasil.map(({id, estado}) => ({
+  id: id + 1,
+  estado: `${estado} pertence ao Brasil`
+}))
+console.log(newNewBrasil)
+
+const filteredNewBrasil = newNewBrasil.filter(({ id }) => id % 2 === 0)
+console.log(filteredNewBrasil)
