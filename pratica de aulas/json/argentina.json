@@ -1,0 +1,418 @@
+{
+	"products": [
+		{
+			"product_id": "e4e04fa2-f232-4df1-8742-495ee018acad",
+			"product_type": "terminal",
+			"description": "TPV Wifi",
+			"icon_url": null,
+			"name": "TPV Wifi",
+			"product_configuration": {
+				"product_configuration_id": "5b61b9b8-6703-469d-93ac-f72d3fa070c6",
+				"description": "POS Wifi configuration",
+				"print_receipt": true,
+				"software": null,
+				"terminal_type": "wifi",
+				"transaction_channel_type": "pos",
+				"wireless": true,
+				"links": {
+					"self": {
+						"href": "http://products-ms-dev-plat.onboarding.dev.gms.corp/api/products/product-terminal-configurations/5b61b9b8-6703-469d-93ac-f72d3fa070c6"
+					}
+				}
+			},
+			"business_unit": [
+				"AR"
+			],
+			"tags": [],
+			"pricing_model": {
+				"pricing_type": "recurring",
+				"note": null,
+				"pricing": {
+					"amount": null,
+					"currency": "ARS",
+					"billing_type": "monthly"
+				}
+			},
+			"situation": {
+				"status": "active",
+				"status_update_date": "2021-04-09T19:11:18.210Z"
+			},
+			"owner": "smps",
+			"country": "AR",
+			"tenant": "santander",
+			"links": {
+				"self": {
+					"href": "http://products-ms-dev-plat.onboarding.dev.gms.corp/api/products/e4e04fa2-f232-4df1-8742-495ee018acad"
+				},
+				"product-status": {
+					"href": "http://products-ms-dev-plat.onboarding.dev.gms.corp/api/products/e4e04fa2-f232-4df1-8742-495ee018acad/status"
+				}
+			},
+			"allow_replacement_on_contract": false
+		},
+		{
+			"product_id": "23c3055e-1534-4780-ba17-34da60df7861",
+			"product_type": "terminal",
+			"description": "TPV Ethernet",
+			"icon_url": null,
+			"name": "TPV Ethernet",
+			"product_configuration": {
+				"product_configuration_id": "2aa7edb2-a084-4b5a-94e9-96abbdd06ea4",
+				"description": "POS Ethernet configuration",
+				"print_receipt": true,
+				"software": null,
+				"terminal_type": "ethernet",
+				"transaction_channel_type": "pos",
+				"wireless": false,
+				"links": {
+					"self": {
+						"href": "http://products-ms-dev-plat.onboarding.dev.gms.corp/api/products/product-terminal-configurations/2aa7edb2-a084-4b5a-94e9-96abbdd06ea4"
+					}
+				}
+			},
+			"business_unit": [
+				"AR"
+			],
+			"tags": [],
+			"pricing_model": {
+				"pricing_type": "recurring",
+				"note": null,
+				"pricing": {
+					"amount": null,
+					"currency": "ARS",
+					"billing_type": "monthly"
+				}
+			},
+			"situation": {
+				"status": "active",
+				"status_update_date": "2021-04-09T19:11:18.284Z"
+			},
+			"owner": "smps",
+			"country": "AR",
+			"tenant": "santander",
+			"links": {
+				"self": {
+					"href": "http://products-ms-dev-plat.onboarding.dev.gms.corp/api/products/23c3055e-1534-4780-ba17-34da60df7861"
+				},
+				"product-status": {
+					"href": "http://products-ms-dev-plat.onboarding.dev.gms.corp/api/products/23c3055e-1534-4780-ba17-34da60df7861/status"
+				}
+			}
+		},
+		{
+			"product_id": "30e9bf00-b76f-4a11-b8b8-aa3ffb3cea3e",
+			"product_type": "terminal",
+			"description": "TPV GPRS",
+			"icon_url": null,
+			"name": "TPV Celular",
+			"product_configuration": {
+				"product_configuration_id": "6107849b-7927-4d44-a8a3-d4c37b6d4306",
+				"description": "POS GPRS configuration",
+				"print_receipt": true,
+				"software": null,
+				"terminal_type": "gprs",
+				"transaction_channel_type": "pos",
+				"wireless": true,
+				"links": {
+					"self": {
+						"href": "http://products-ms-dev-plat.onboarding.dev.gms.corp/api/products/product-terminal-configurations/6107849b-7927-4d44-a8a3-d4c37b6d4306"
+					}
+				}
+			},
+			"business_unit": [
+				"AR"
+			],
+			"tags": [],
+			"pricing_model": {
+				"pricing_type": "recurring",
+				"note": null,
+				"pricing": {
+					"amount": null,
+					"currency": "ARS",
+					"billing_type": "monthly"
+				}
+			},
+			"situation": {
+				"status": "active",
+				"status_update_date": "2021-04-09T19:11:18.353Z"
+			},
+			"owner": "smps",
+			"country": "AR",
+			"tenant": "santander",
+			"links": {
+				"self": {
+					"href": "http://products-ms-dev-plat.onboarding.dev.gms.corp/api/products/30e9bf00-b76f-4a11-b8b8-aa3ffb3cea3e"
+				},
+				"product-status": {
+					"href": "http://products-ms-dev-plat.onboarding.dev.gms.corp/api/products/30e9bf00-b76f-4a11-b8b8-aa3ffb3cea3e/status"
+				}
+			}
+		},
+		{
+			"product_id": "b751ae54-44fe-4d56-aec7-2c461d5ccfd0",
+			"product_type": "terminal",
+			"description": "Terminal - Exportado",
+			"name": "Terminal - Exportado",
+			"product_configuration": {
+				"product_configuration_id": "df98264e-c81e-455d-af5b-61ab0ccd9103",
+				"description": "POS Wifi CONFIGURATOR - EXPORT",
+				"print_receipt": true,
+				"software": null,
+				"terminal_type": "wifi",
+				"transaction_channel_type": "pos",
+				"wireless": true,
+				"links": {
+					"self": {
+						"href": "http://products-ms-dev-plat.onboarding.dev.gms.corp/api/products/product-terminal-configurations/df98264e-c81e-455d-af5b-61ab0ccd9103"
+					}
+				}
+			},
+			"business_unit": [
+				"AR"
+			],
+			"tags": [],
+			"pricing_model": {
+				"note": "Note",
+				"pricing_type": "recurring",
+				"pricing": {
+					"currency": "ARS",
+					"billing_type": "monthly"
+				}
+			},
+			"situation": {
+				"status": "active",
+				"status_update_date": "2021-08-26T18:17:36.092Z"
+			},
+			"owner": "mit",
+			"country": "AR",
+			"tenant": "santander",
+			"links": {
+				"self": {
+					"href": "http://products-ms-dev-plat.onboarding.dev.gms.corp/api/products/b751ae54-44fe-4d56-aec7-2c461d5ccfd0"
+				},
+				"product-status": {
+					"href": "http://products-ms-dev-plat.onboarding.dev.gms.corp/api/products/b751ae54-44fe-4d56-aec7-2c461d5ccfd0/status"
+				}
+			}
+		},
+		{
+			"product_id": "81fd1494-5afb-4179-b981-87c010fe798c",
+			"product_type": "terminal",
+			"description": "Pay by link",
+			"icon_url": null,
+			"group": "logic_terminals",
+			"name": "Pay by link",
+			"product_configuration": {
+				"product_configuration_id": "c1dfc3a1-6357-43ac-a21c-df947bb1f2b6",
+				"description": "Ecommerce configuration",
+				"print_receipt": false,
+				"software": null,
+				"terminal_type": "pay_by_link",
+				"transaction_channel_type": "ecommerce",
+				"wireless": true,
+				"links": {
+					"self": {
+						"href": "http://products-ms-dev-plat.onboarding.dev.gms.corp/api/products/product-terminal-configurations/c1dfc3a1-6357-43ac-a21c-df947bb1f2b6"
+					}
+				}
+			},
+			"business_unit": [
+				"AR"
+			],
+			"tags": [],
+			"pricing_model": {
+				"pricing": {
+					"amount": null,
+					"currency": "ARS",
+					"billing_type": "monthly"
+				},
+				"pricing_type": "recurring",
+				"note": null
+			},
+			"relationships": [],
+			"situation": {
+				"status": "active",
+				"status_update_date": "2021-09-24T14:33:12.836Z"
+			},
+			"owner": "smps",
+			"country": "AR",
+			"tenant": "santander",
+			"links": {
+				"self": {
+					"href": "http://products-ms-dev-plat.onboarding.dev.gms.corp/api/products/81fd1494-5afb-4179-b981-87c010fe798c"
+				},
+				"product-status": {
+					"href": "http://products-ms-dev-plat.onboarding.dev.gms.corp/api/products/81fd1494-5afb-4179-b981-87c010fe798c/status"
+				}
+			}
+		},
+		{
+			"product_id": "ecb4250e-cc7c-4292-9081-cd1fd9a7ac16",
+			"product_type": "terminal",
+			"description": "Checkout Lighbox",
+			"icon_url": null,
+			"group": "logic_terminals",
+			"name": "Checkout Lighbox",
+			"product_configuration": {
+				"product_configuration_id": "b49c7a1d-fbce-4ea7-ba2f-b84dd98b164e",
+				"description": "Ecommerce configuration",
+				"print_receipt": false,
+				"software": null,
+				"terminal_type": "checkout_lightbox",
+				"transaction_channel_type": "ecommerce",
+				"wireless": true,
+				"links": {
+					"self": {
+						"href": "http://products-ms-dev-plat.onboarding.dev.gms.corp/api/products/product-terminal-configurations/b49c7a1d-fbce-4ea7-ba2f-b84dd98b164e"
+					}
+				}
+			},
+			"business_unit": [
+				"AR"
+			],
+			"tags": [],
+			"pricing_model": {
+				"pricing": {
+					"amount": null,
+					"currency": "ARS",
+					"billing_type": "monthly"
+				},
+				"pricing_type": "recurring",
+				"note": null
+			},
+			"relationships": [
+				{
+					"type": "product",
+					"value": "d9053dc7-fda9-44e4-be8a-b5d5eca3c433",
+					"relation": "exclusive"
+				}
+			],
+			"situation": {
+				"status": "active",
+				"status_update_date": "2021-09-24T14:38:10.859Z"
+			},
+			"owner": "smps",
+			"country": "AR",
+			"tenant": "santander",
+			"links": {
+				"self": {
+					"href": "http://products-ms-dev-plat.onboarding.dev.gms.corp/api/products/ecb4250e-cc7c-4292-9081-cd1fd9a7ac16"
+				},
+				"product-status": {
+					"href": "http://products-ms-dev-plat.onboarding.dev.gms.corp/api/products/ecb4250e-cc7c-4292-9081-cd1fd9a7ac16/status"
+				}
+			}
+		},
+		{
+			"product_id": "d9053dc7-fda9-44e4-be8a-b5d5eca3c433",
+			"product_type": "terminal",
+			"description": "Checkout iFrame",
+			"icon_url": null,
+			"group": "logic_terminals",
+			"name": "Checkout iFrame",
+			"product_configuration": {
+				"product_configuration_id": "a6bada4c-2ee4-4a70-96cd-03e017715c84",
+				"description": "Ecommerce configuration",
+				"print_receipt": false,
+				"software": "null",
+				"terminal_type": "checkout_iframe",
+				"transaction_channel_type": "ecommerce",
+				"wireless": true,
+				"links": {
+					"self": {
+						"href": "http://products-ms-dev-plat.onboarding.dev.gms.corp/api/products/product-terminal-configurations/a6bada4c-2ee4-4a70-96cd-03e017715c84"
+					}
+				}
+			},
+			"business_unit": [
+				"AR"
+			],
+			"tags": [],
+			"pricing_model": {
+				"pricing": {
+					"amount": null,
+					"currency": "ARS",
+					"billing_type": "monthly"
+				},
+				"pricing_type": "recurring",
+				"note": null
+			},
+			"relationships": [
+				{
+					"type": "product",
+					"value": "ecb4250e-cc7c-4292-9081-cd1fd9a7ac16",
+					"relation": "exclusive"
+				}
+			],
+			"situation": {
+				"status": "active",
+				"status_update_date": "2021-09-24T14:39:25.132Z"
+			},
+			"owner": "smps",
+			"country": "AR",
+			"tenant": "santander",
+			"links": {
+				"self": {
+					"href": "http://products-ms-dev-plat.onboarding.dev.gms.corp/api/products/d9053dc7-fda9-44e4-be8a-b5d5eca3c433"
+				},
+				"product-status": {
+					"href": "http://products-ms-dev-plat.onboarding.dev.gms.corp/api/products/d9053dc7-fda9-44e4-be8a-b5d5eca3c433/status"
+				}
+			}
+		},
+		{
+			"product_id": "0c280655-24e4-4067-abb1-3bd6aa256cde",
+			"product_type": "terminal",
+			"product_subtype": "smart_pos",
+			"description": "GET Smart POS sin Chip",
+			"icon_url": null,
+			"name": "GET Smart POS sin Chip",
+			"product_configuration": {
+				"product_configuration_id": "5b61b9b8-6703-469d-93ac-f72d3fa070c6",
+				"description": "POS Wifi configuration",
+				"print_receipt": true,
+				"software": null,
+				"terminal_type": "wifi",
+				"transaction_channel_type": "pos",
+				"wireless": true,
+				"links": {
+					"self": {
+						"href": "http://products-ms-dev-plat.onboarding.dev.gms.corp/api/products/product-terminal-configurations/5b61b9b8-6703-469d-93ac-f72d3fa070c6"
+					}
+				}
+			},
+			"business_unit": [
+				"AR"
+			],
+			"tags": [],
+			"pricing_model": {
+				"pricing": {
+					"amount": null,
+					"currency": "ARS",
+					"billing_type": "monthly"
+				},
+				"pricing_type": "recurring",
+				"note": null
+			},
+			"situation": {
+				"status": "active",
+				"status_update_date": "2022-06-17T17:28:01.056Z"
+			},
+			"owner": "smps",
+			"country": "AR",
+			"tenant": "santander",
+			"links": {
+				"self": {
+					"href": "http://products-ms-dev-plat.onboarding.dev.gms.corp/api/products/0c280655-24e4-4067-abb1-3bd6aa256cde"
+				},
+				"product-status": {
+					"href": "http://products-ms-dev-plat.onboarding.dev.gms.corp/api/products/0c280655-24e4-4067-abb1-3bd6aa256cde/status"
+				}
+			}
+		}
+	],
+	"total": 8,
+	"limit": 10000,
+	"offset": 1,
+	"offsets": 1
+}
